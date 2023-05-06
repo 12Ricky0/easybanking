@@ -27,8 +27,8 @@ Users will be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/12Ricky0/easybanking.git](https://your-solution-url.com)
-- Live Site URL: [https://easybanking-iota.vercel.app/](https://your-live-site-url.com)
+- Solution URL: [https://github.com/12Ricky0/easybanking.git](https://github.com/12Ricky0/easybanking.git)
+- Live Site URL: [https://easybanking-iota.vercel.app/](https://easybanking-iota.vercel.app)
 
 ## My process
 
