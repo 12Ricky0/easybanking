@@ -44,7 +44,7 @@ function Headers() {
                     onClick={handleClick}
                     style={!isClicked ? myStyle2 : myStyle}
 
-                    className="burger" src="images/icon-hamburger.svg" />
+                    className="burger" testid="burgar" src="images/icon-hamburger.svg" />
                 <Image
                     onClick={handleClick}
                     style={!isClicked ? myStyle : myStyle2}
