@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t EASYBANKING -f Dockerfile.dev .
+  - docker build -t easybanking -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true EASYBANKING npm run test
+  - docker run -e CI=true easybanking npm run test
