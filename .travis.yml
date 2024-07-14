@@ -17,5 +17,5 @@ deploy:
   bucket_path: "frontend"
   on:
     branch: main
-  access_key_id: $AWS-Access key
-  secret_access_key: $AWS-secret
+  access_key_id: "$AWS-Access key"
+  secret_access_key: "$AWS-secret"
