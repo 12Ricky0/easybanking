@@ -7,3 +7,15 @@ before_install:
 
 script:
   - docker run -e CI=true easybanking npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-1"
+  app: "frontend"
+  env: "frontend-env"
+  bucket_name: "elasticbeanstalk-us-east-1-617631581212"
+  bucket_path: "frontend"
+  on:
+    branch: main
+  access_key_id: $AWS-Access key
+  secret_access_key: $AWS-secret
