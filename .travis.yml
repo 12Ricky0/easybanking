@@ -3,13 +3,13 @@ services:
   - docker
 
 before_install:
-  - docker build -t temple4b/easybanking .
+  - docker build -t temple4b/easybanking -f Dockerfile .
 
 script:
   - docker run -e CI=true temple4b/easybanking npm run test
 
 after_success:
-  - docker build -t temple4b/easybanking .
+  - docker build -t temple4b/easybanking -f Dockerfile .
   # Login to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Push images to Docker Hub
