@@ -6,7 +6,7 @@ before_install:
   - docker build -t temple4b/easybanking -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true easybanking npm run test
+  - docker run -e CI=true temple4b/easybanking npm run test
 
 after_success:
   - docker build -t temple4b/easybanking -f Dockerfile.dev .
